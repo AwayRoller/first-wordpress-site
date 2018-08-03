@@ -5,8 +5,10 @@
     <title>First WP</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="wp-content/themes/first-wordpress-site/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="wp-content/themes/first-wordpress-site/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css" >
+
+
 
     <link href="<?= get_stylesheet_directory_uri()?>/style.css" rel="stylesheet"/>
     <?php /*wp_head(); */?>
