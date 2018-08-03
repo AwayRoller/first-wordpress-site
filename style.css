@@ -1,0 +1,73 @@
+/*
+Theme Name: First WP Theme
+Theme URI:
+Author: Artkonekt
+Author URI: artkonekt.com
+Description: My first WP theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: first-wp-theme
+
+*/
+
+/*
+body {
+
+    background: #00b9eb;
+
+}*/
+
+
+nav {
+
+    background-color: grey;
+}
+
+
+.nav-header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.nav-header li {
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.menu a{
+    color: #1342cc;
+
+}
+
+.container {
+    max-width: 100%;
+    padding: 10px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.page-title-container {
+    background-color: #e1e2e5;
+}
+
+.post-container {
+    background-color: #828388;
+}
+
+.page-title {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: black;
+}
+
+.footer-copyright {
+    color: #ffffff;
+}
