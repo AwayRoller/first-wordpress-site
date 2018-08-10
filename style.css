@@ -12,19 +12,13 @@ Text Domain: first-wp-theme
 
 */
 
-/*
 body {
-
-    background: #00b9eb;
-
-}*/
-
-
-nav {
-
-    background-color: grey;
+    background-color: #EFEFEF;
 }
 
+nav {
+    background-color: #A9A9A9;
+}
 
 .nav-header ul {
     margin: 0;
@@ -40,11 +34,10 @@ nav {
 
 .menu a{
     color: #1342cc;
-
 }
 
 .container {
-    max-width: 100%;
+    max-width: 80%;
     padding: 10px 15px;
     margin-right: auto;
     margin-left: auto;
@@ -52,11 +45,17 @@ nav {
 }
 
 .page-title-container {
-    background-color: #e1e2e5;
+    background-color: #EFEFEF;
+}
+
+.main-container {
+    background-color: #CAEBF2;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .post-container {
-    background-color: #828388;
+    padding-top: 35px;
 }
 
 .page-title {
@@ -64,8 +63,41 @@ nav {
     text-align: center;
 }
 
+.page-description {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.post-title{
+    padding-top: 20px;
+    color: #FF3B3F;
+}
+
+.content-article {
+    padding-right:100px;
+}
+
+.content-img {
+    display: block;
+}
+
+.article-card {
+    margin-bottom: 15px;
+
+    background-color: #A9A9A9;
+}
+
+.blog-sidebar {
+    padding-top:35px;
+}
+
 .page-footer {
+
     background-color: black;
+
+    /*
+    background-color: #FF3B3F;
+    */
 }
 
 .footer-copyright {

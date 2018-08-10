@@ -1,13 +1,13 @@
 
-    <footer class="page-footer font-small ">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href=""> Muhhahhaaaa </a>
+    <footer class="page-footer font-small">
+        <div class="footer-container">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href=""> Muhhahhaaaa </a>
+            </div>
+            <!-- Copyright -->
         </div>
-        <!-- Copyright -->
-
     </footer>
-
+<?php wp_footer(); ?>
 </body>
 </html>
