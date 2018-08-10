@@ -2,34 +2,27 @@
     <div class="sidebar-module sidebar-module-inset">
         <h4>About</h4>
         <ul>
-
             <?php
             if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
                 <li>
                     <?= get_the_title(); ?>
                 </li>
-
             <?php endwhile; endif;
             ?>
-
-
         </ul>
         <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
     </div>
     <div class="sidebar-module">
         <h4>Archives</h4>
         <ol class="list-unstyled">
-            <li><a href="#">August 2</a></li>
-            <!-- More archive examples -->
+            <?php wp_get_archives( 'type=daily' ); ?>
         </ol>
     </div>
     <div class="sidebar-module">
-        <h4>Elsewhere</h4>
+        <h4>Where You Can Find Me</h4>
         <ol class="list-unstyled">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://github.com/AwayRoller">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/zsolt-vizi">LinkedIn</a></li>
         </ol>
     </div>
 </div>
