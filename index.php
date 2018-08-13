@@ -31,11 +31,10 @@
         <div class="post-nav-row row">
             <div class="col-1"></div>
             <div class="col-8 post-nav-col">
-                <?php posts_nav_link(); ?>
+                <?php posts_nav_link($sep = ' '); ?>
             </div>
             <div class="col-3"></div>
         </div>
     </section>
-
 
 <?php get_footer(); ?>

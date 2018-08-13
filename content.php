@@ -7,8 +7,6 @@
                 <h2 class="entry-title"><?= get_the_title(); ?></h2>
             </header>
 
-
-
             <div class="row img-row">
                 <div class="col-2"></div>
                 <div class="col-8">
@@ -24,13 +22,8 @@
                     </div>
 
                 </div>
-
                 <div class="col-2"></div>
-
-
-
             </div>
-
 
             <p class="post-content"><?= get_the_content(); ?></p>
             <p class="content-date">

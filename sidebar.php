@@ -15,7 +15,15 @@
     <div class="sidebar-module">
         <h4>Archives</h4>
         <ol class="list-unstyled">
-            <?php wp_get_archives( 'type=daily' ); ?>
+            <a href="">All</a>
+        </ol>
+        <ol class="list-unstyled">
+            Beer
+            <?php wp_get_archives( array('type'=>'daily', 'post_type'=>'beer') ); ?>
+        </ol>
+        <ol class="list-unstyled">
+            Other
+            <?php wp_get_archives( 'type=daily'); ?>
         </ol>
     </div>
     <div class="sidebar-module">
