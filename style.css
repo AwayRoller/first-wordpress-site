@@ -97,7 +97,7 @@ nav {
 }
 
 .blog-sidebar {
-    padding-top:35px;
+    padding-top:0px;
 }
 
 .page-footer {
@@ -127,4 +127,10 @@ nav {
     display: block;
     vertical-align: middle;
     width: 100%;
+}
+
+.post-nav-col a {
+    max-width: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
 }

@@ -5,8 +5,8 @@
     <title>First WP</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="wp-content/themes/first-wordpress-site/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="wp-content/themes/first-wordpress-site/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri()?>/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="<?= get_stylesheet_directory_uri()?>/public/bootstrap/bootstrap-4.0.0-dist/css/bootstrap.min.css" >
 
     <link href="<?= get_stylesheet_directory_uri()?>/style.css" rel="stylesheet"/>
     <?php wp_head(); ?>
@@ -17,10 +17,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-1">
-                        <img class="logo" src="wp-content/themes/first-wordpress-site/assets/images/artkonekt-logo.svg" alt="placeholder">
+                        <img class="logo" src="<?= get_stylesheet_directory_uri()?>/assets/images/artkonekt-logo.svg" alt="placeholder">
                     </div>
-                    <div class="col-7"></div>
-                    <div class="col-4 nav-col">
+                    <div class="col-6"></div>
+                    <div class="col-5 nav-col">
                             <?php wp_nav_menu( array( 'first-wp-theme' => 'main-menu' ) ); ?>
                     </div>
                 </div>
