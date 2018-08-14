@@ -21,3 +21,7 @@ Learn how to build a basic wp site
 14. Add Blog page to Menu
 15. Change to permalinks
 16. Create custom post-type
+
+17. Archive - day, author
+18. Excerpt the non-'Read More' posts
+    - limit excerpt to 25 words

@@ -1,6 +1,6 @@
 <?php
 
-
+//Nav menu
 function register_my_menu() {
     register_nav_menu('main-menu',__( 'Main Menu' ));
 }
@@ -34,6 +34,21 @@ function add_my_post_types_to_query( $query ) {
 
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
-add_theme_support( 'post-thumbnails' );
+//Add featured image support
+function add_featured_image() {
+    //set_post_thumbnail_size(200, 200);
+    add_theme_support( 'post-thumbnails' );
+    add_image_size('post-image', 525,295, array('left','top'));
+
+}
+
+add_action('after_setup_theme', 'add_featured_image');
+
+//Customize excerpt word count length
+function custom_excerpt_length() {
+    return 25;
+}
+
+add_filter('excerpt_length', 'custom_excerpt_length');
 
 
