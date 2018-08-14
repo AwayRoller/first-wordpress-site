@@ -16,25 +16,22 @@
         <nav class="nav-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-sm-4 col-lg-2">
                         <img class="logo" src="<?= get_stylesheet_directory_uri()?>/assets/images/artkonekt-logo.svg" alt="placeholder">
                     </div>
-                    <div class="col-6"></div>
-                    <div class="col-5 nav-col">
-                            <?php wp_nav_menu( array( 'first-wp-theme' => 'main-menu' ) ); ?>
+                    <div class="col-sm-8 col-lg-5">
+                        <div class="search-container">
+                            <?php if (!is_page(array('about', 'contact')) && !is_front_page()) {
+                                get_search_form();
+                            }; ?>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-5 nav-col">
+                        <?php wp_nav_menu( array( 'first-wp-theme' => 'main-menu' ) ); ?>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <div class="page-title-container container">
-        <?php if (!is_home()) : ?>
-            <h1 class="page-title">Welcome to My First WP Site</h1>
-            <h2 class="page-description">It's all about some random posts</h2>
-        <?php else : ?>
-            <h1 class="page-title">The Blog Section</h1>
-        <?php endif; ?>
-    </div>
 
 

@@ -25,3 +25,6 @@ Learn how to build a basic wp site
 17. Archive - day, author
 18. Excerpt the non-'Read More' posts
     - limit excerpt to 25 words
+19. Add Search, customize search results
+20. Different content for single posts
+21. Different style for custom post type

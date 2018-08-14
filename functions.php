@@ -6,7 +6,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-// Our custom post type function
+// My custom post type function
 function create_posttype() {
 
     register_post_type( 'beer',
@@ -22,8 +22,9 @@ function create_posttype() {
         )
     );
 }
-// Hooking up our function to theme setup
+// Hooking up function to theme setup
 add_action( 'init', 'create_posttype' );
+
 
 // Show posts of 'post', 'page' and 'beer' post types on home page
 function add_my_post_types_to_query( $query ) {
@@ -39,7 +40,7 @@ function add_featured_image() {
     //set_post_thumbnail_size(200, 200);
     add_theme_support( 'post-thumbnails' );
     add_image_size('post-image', 525,295, array('left','top'));
-
+    add_image_size('single-image', 1000,500, array('left','top'));
 }
 
 add_action('after_setup_theme', 'add_featured_image');
