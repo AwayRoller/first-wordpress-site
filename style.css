@@ -14,10 +14,31 @@ Text Domain: first-wp-theme
 
 body {
     background-color: #EFEFEF;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
 nav {
     background-color: #A9A9A9;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-row {
+    align-items: center;
+
+}
+
+.title-row {
+    padding: 30px;
+    align-items: center;
+}
+
+.img-row {
+    padding: 20px 0px;
 }
 
 .logo {
@@ -26,11 +47,12 @@ nav {
 
 .nav-header ul {
     margin: 0;
-    padding: 15px 0;
+    padding: 20px 0;
     list-style-type: none;
     list-style-image: none;
     float: right;
     font-size: xx-large;
+    font-family: 'Helvetica', Arial, serif;
 }
 
 .nav-header li {
@@ -44,7 +66,7 @@ nav {
 
 .container {
     max-width: 80%;
-    padding: 10px 15px;
+    padding: 20px 15px;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -54,11 +76,24 @@ nav {
     background-color: #EFEFEF;
 }
 
+.page-content-container {
+    background-color: #A9A9A9;
+}
+
+.page-content-title {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
 .main-container {
     background-color: #CAEBF2;
     padding-bottom: 20px;
     margin-bottom: 30px;
     border-radius: 20px;
+}
+
+.contact-content-container{
+    height: 550px;
 }
 
 .post-container {
@@ -96,7 +131,6 @@ nav {
 
 .article-card {
     margin-bottom: 15px;
-
     background-color: #A9A9A9;
 }
 
@@ -105,16 +139,11 @@ nav {
 }
 
 .page-footer {
-
     background-color: black;
 }
 
 .footer-copyright {
     color: #ffffff;
-}
-
-.img-row {
-    padding: 20px 0px;
 }
 
 .content-img-container {
@@ -147,8 +176,8 @@ nav {
 
 .search-container {
     display: inline-block;
-    padding-top: 25px;
     float: right;
+    padding: 20px 0px;
 }
 
 .search-container label {
@@ -156,5 +185,30 @@ nav {
 }
 
 .warning-col {
-    margin:auto
+    margin:auto;
 }
+
+.front-card {
+    padding: 45px;
+    text-align: center;
+    color: #FF3B3F;
+    background-color: #EFEFEF;
+    box-shadow: 0 0 20px rgba(0,0,0,.7);
+    margin: 20px 10px;
+}
+
+.front-card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.front-card-img {
+    min-height: 100px;
+    padding: 20px 0;
+}
+
+.front-card-content {
+    color: black;
+}
+

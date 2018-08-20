@@ -1,14 +1,19 @@
 <?php get_header(); ?>
 
-<div class="page-title-container container">
-    <?php if (!is_home()) : ?>
-        <h1 class="page-title">Welcome to My First WP Site</h1>
-        <h2 class="page-description">It's all about some random posts</h2>
-    <?php else : ?>
-        <h1 class="page-title">The Blog Section</h1>
-    <?php endif; ?>
-</div>
-
+<section class="page-title-container">
+    <div class="container">
+        <div class="row title-row">
+            <div class="col-md-12">
+                <?php if (!is_home()) : ?>
+                    <h1 class="page-title">Welcome to My First WP Site</h1>
+                    <h2 class="page-description">It's all about some random posts</h2>
+                <?php else : ?>
+                    <h1 class="page-title">The Blog Section</h1>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="main-container container">
     <div class="post-title-row row">
         <div class="col-1"></div>

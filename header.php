@@ -15,7 +15,7 @@
     <header class="nav-header">
         <nav class="nav-container">
             <div class="container">
-                <div class="row">
+                <div class="row nav-row">
                     <div class="col-sm-4 col-lg-2">
                         <img class="logo" src="<?= get_stylesheet_directory_uri()?>/assets/images/artkonekt-logo.svg" alt="placeholder">
                     </div>
