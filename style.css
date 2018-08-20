@@ -26,7 +26,7 @@ nav {
 
 .nav-header ul {
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
     list-style-type: none;
     list-style-image: none;
     float: right;
@@ -88,6 +88,12 @@ nav {
     display: block;
 }
 
+.content-single-img {
+    display: block;
+    width: 1000px;
+    height: 500px;
+}
+
 .article-card {
     margin-bottom: 15px;
 
@@ -108,7 +114,7 @@ nav {
 }
 
 .img-row {
-    padding-bottom: 20px;
+    padding: 20px 0px;
 }
 
 .content-img-container {

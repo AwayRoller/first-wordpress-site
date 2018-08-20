@@ -17,7 +17,7 @@
                         <?php if ( has_post_thumbnail() ) {
                             the_post_thumbnail('single-image');
                         } else { ?>
-                            <img class="content-img" src="<?php bloginfo('template_directory'); ?>/assets/images/random.jpeg" alt="<?php the_title(); ?>" />
+                            <img class="content-single-img" src="<?php bloginfo('template_directory'); ?>/assets/images/random.jpeg" alt="<?php the_title(); ?>" />
                         <?php } ?>
                     </div>
                 </div>
