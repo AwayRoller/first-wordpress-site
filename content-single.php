@@ -24,11 +24,7 @@
                 <div class="col-2"></div>
             </div>
             <p class="post-content">
-                <?php if (is_home() OR is_archive() OR is_search()) {
-                    echo get_the_excerpt();
-                } else {
-                    echo get_the_content();
-                } ;?>
+                <?php echo get_the_content(); ?>
             </p>
             <div class="row content-row">
                 <div class="col-6">

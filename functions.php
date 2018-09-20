@@ -25,16 +25,6 @@ function create_posttype() {
 // Hooking up function to theme setup
 add_action( 'init', 'create_posttype' );
 
-
-// Show posts of 'post', 'page' and 'beer' post types on home page
-function add_my_post_types_to_query( $query ) {
-    if ( is_home() && $query->is_main_query() )
-        $query->set( 'post_type', array( 'post', 'beer' ) );
-    return $query;
-}
-
-add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
-
 //Add featured image support
 function add_featured_image() {
     //set_post_thumbnail_size(200, 200);

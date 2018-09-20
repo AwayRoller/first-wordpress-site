@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-sm-8 col-lg-5">
                         <div class="search-container">
-                            <?php if (!is_page(array('about', 'contact')) && !is_front_page()) {
+                            <?php if (!is_page(array('home', 'about', 'contact')) && !is_front_page()) {
                                 get_search_form();
                             }; ?>
                         </div>

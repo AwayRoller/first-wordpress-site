@@ -2,13 +2,13 @@
     <div class="sidebar-module sidebar-module-inset">
         <h4>About</h4>
         <ul>
-            <?php
-            if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <li>
-                    <?= get_the_title(); ?>
-                </li>
-            <?php endwhile; endif;
-            ?>
+            <?php if ( have_posts() ) :
+                while ( have_posts() ) : the_post(); ?>
+                    <li>
+                        <?= get_the_title(); ?>
+                    </li>
+                <?php endwhile;
+            endif; ?>
         </ul>
         <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
     </div>

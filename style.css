@@ -37,6 +37,11 @@ nav {
     align-items: center;
 }
 
+.recent-title-row {
+    text-align: center;
+    color: #FF3B3F;
+}
+
 .img-row {
     padding: 20px 0px;
 }

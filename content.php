@@ -12,21 +12,18 @@
                 </div>
                 <div class="col-8">
                     <div class="content-img-container">
-                        <?php if ( has_post_thumbnail() ) {
+                        <?php if ( has_post_thumbnail() ) :
                             the_post_thumbnail('post-image');
-                        } else { ?>
+                        else : ?>
                             <img class="content-img" src="<?php bloginfo('template_directory'); ?>/assets/images/random.jpeg" alt="<?php the_title(); ?>" />
-                        <?php } ?>
+                        <?php endif ?>
+
                     </div>
                 </div>
                 <div class="col-2"></div>
             </div>
             <p class="post-content">
-                <?php if (is_home() OR is_archive() OR is_search()) {
-                    echo get_the_excerpt();
-                } else {
-                    echo get_the_content();
-                } ;?>
+                <?php echo get_the_excerpt(); ?>
             </p>
             <div class="row content-row">
                 <div class="col-6">
